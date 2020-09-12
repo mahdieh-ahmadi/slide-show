@@ -1,3 +1,7 @@
+html{
+  overflow: hidden;
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -124,7 +128,7 @@
   background-size: cover;
 }
 .slide{
-  padding-top: 300px;
+  padding-top: 30vh;
   padding-left: 60px;
 }
 .slide p{
@@ -148,6 +152,8 @@
   border: none;
   border-bottom: 1px solid white;
   color: white;
+  outline: none;
+  cursor: pointer;
 }
 .slide button i{
   margin-left: 15px;
@@ -155,5 +161,21 @@
 @media(max-width:650px){
   .banner h1{
     font-size: 60px;
+  }
+}
+@media(max-width:450px){
+  .banner h1{
+    font-size: 40px;
+  }
+  .banner button{
+    margin-top: 8px;
+    width: 150px;
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+@media(max-width:400px){
+  .slide{
+    padding-left: 30px;
   }
 }
